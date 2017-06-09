@@ -4,7 +4,7 @@
   "description": "slack app um zu wissen wie lange es bis zum feierabend geht",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
+    "test": "nodemon index.js",
     "start": "node index.js"
   },
   "keywords": [
@@ -13,7 +13,8 @@
   "author": "dr",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "1.11.0"
+    "nodemon": "1.11.0",
+    "typescript": "2.3.4"
   },
   "dependencies": {
     "express": "4.15.3",

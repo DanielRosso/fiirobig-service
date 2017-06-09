@@ -11,5 +11,5 @@ app.post('/', function (req, res) {
     var timeToFiirobig = moment().startOf('minute').to(moment().startOf('hour').hour(17));
     var minutesToFiirobig = moment.duration(moment().startOf('hour').hour(17).diff(moment().startOf('minute'))).asMinutes();
 
-    res.status(200).send(util.format("Es sind noch %s minuten bis zum Fiiiroobig :)", minutesToFiirobig));
+    res.status(200).send(util.format("Es sind noch %s Minuten bis zum Fiiiroobig :)", minutesToFiirobig));
 });

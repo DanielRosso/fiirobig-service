@@ -13,3 +13,10 @@ app.post('/', function (req, res) {
 
     res.status(200).send(util.format("Es sind noch %s Minuten bis zum Fiiiroobig :)", minutesToFiirobig));
 });
+
+app.post("/auto", function (req, res) {
+    //kw 47
+    var timeToAuto = moment("20201116", "YYYYMMDD").fromNow();
+
+    res.status(200).send(util.format("Es sind noch %s bis zum AMG :)", timeToAuto));
+});

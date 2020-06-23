@@ -1,5 +1,6 @@
 var util = require('util');
 var moment = require('moment');
+moment.locale("de");
 
 var express = require('express'),
     app = express(),
